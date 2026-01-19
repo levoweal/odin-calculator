@@ -8,25 +8,50 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>This is calculator, hi</h1>
-    <p class="display">0</p>
-    <button class="number" value="1">1</button>
-    <button class="number" value="2">2</button>
-    <button class="number" value="3">3</button>
-    <button class="number" value="4">4</button>
-    <button class="number" value="5">5</button>
-    <button class="number" value="6">6</button>
-    <button class="number" value="7">7</button>
-    <button class="number" value="8">8</button>
-    <button class="number" value="9">9</button>
-    <button class="number" value="0">0</button>
-    <button class="number" value=".">.</button>
-    <button class="operator" value="+">+</button>
-    <button class="operator" value="-">-</button>
-    <button class="operator" value="*">*</button>
-    <button class="operator" value="/">/</button>
-    <button class="equals" value="=">=</button>
-    <button class="backspace">CE</button>
-    <button class="clear">C</button>
+    <div class="calculator-container">
+        <h1>this is calculator, hi</h1>
+        <div class="calculator">
+            <div class="display-container">
+                <p class="display"></p>
+            </div>
+            <div class="button-grid">
+                <!-- Number and function buttons -->
+                <div class="numbers-grid">
+                    <div class="row">
+                        <button class="clear">C</button>
+                        <button class="backspace">CE</button>
+                    </div>
+                    <div class="row">
+                        <button class="number" value="7">7</button>
+                        <button class="number" value="8">8</button>
+                        <button class="number" value="9">9</button>
+                    </div>
+                    <div class="row">
+                        <button class="number" value="4">4</button>
+                        <button class="number" value="5">5</button>
+                        <button class="number" value="6">6</button>
+                    </div>
+                    <div class="row">
+                        <button class="number" value="1">1</button>
+                        <button class="number" value="2">2</button>
+                        <button class="number" value="3">3</button>
+                    </div>
+                    <div class="row">
+                        <button class="number zero" value="0">0</button>
+                        <button class="number" value=".">.</button>
+                    </div>
+                </div>
+                
+                <!-- Operators column -->
+                <div class="operators-column">
+                    <button class="operator" value="/">/</button>
+                    <button class="operator" value="*">×</button>
+                    <button class="operator" value="-">-</button>
+                    <button class="operator" value="+">+</button>
+                    <button class="equals" value="=">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

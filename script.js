@@ -25,17 +25,17 @@ numBtns.forEach(numBtn => {
 operBtns.forEach(operBtn => {
     operBtn.addEventListener('click', () => {
         if (operator === '+' && num2) {
-            num1 = Number(num1) + Number(num2);
+            num1 = `${Number(num1) + Number(num2)}`;
             num2 = '';
             operator = operBtn.value;
             display.textContent = `${num1} ${operator}`
         } else if (operator === '-' && num2) {
-            num1 = Number(num1) - Number(num2);
+            num1 = `${Number(num1) - Number(num2)}`;
             num2 = '';
             operator = operBtn.value;
             display.textContent = `${num1} ${operator}`
         } else if (operator === '*' && num2) {
-            num1 = Number(num1) * Number(num2);
+            num1 = `${Number(num1) * Number(num2)}`;
             num2 = '';
             operator = operBtn.value;
             display.textContent = `${num1} ${operator}`
@@ -46,7 +46,7 @@ operBtns.forEach(operBtn => {
                 operator = operBtn.value;
                 display.textContent = `${num1} ${operator}`
             } else {
-                num1 = +(Number(num1) / Number(num2)).toFixed(2);
+                num1 = `${+(Number(num1) / Number(num2)).toFixed(2)}`;
                 num2 = '';
                 operator = operBtn.value;
                 display.textContent = `${num1} ${operator}`
@@ -92,7 +92,7 @@ clearBtn.addEventListener('click', () => {
     num1 = '';
     num2 = '';
     operator = '';
-    display.textContent = '0';
+    display.textContent = '';
 })
 
 backspaceBtn.addEventListener('click', () => {
