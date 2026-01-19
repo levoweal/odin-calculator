@@ -100,7 +100,7 @@ button:hover {
     filter: brightness(95%);
 }
 
-.number {
+.number, .dot {
     background-color: #f1f3f4;
     color: #202124;
     border: 1px solid #dadce0;
