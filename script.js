@@ -45,7 +45,7 @@ operBtns.forEach(operBtn => {
             num2 = '';
             operator = operBtn.value;
             display.textContent = `${num1} ${operator}`
-        } else if (operator === '*' && num2) {
+        } else if (operator === '×' && num2) {
             num1 = `${+(Number(num1) * Number(num2)).toFixed(2)}`;
             num2 = '';
             operator = operBtn.value;
@@ -80,7 +80,7 @@ equalsBtn.addEventListener('click', () => {
         num1 = '';
         num2 = '';
         operator = '';
-    } else if (operator === '*' && num2) {
+    } else if (operator === '×' && num2) {
         display.textContent = `${+(Number(num1) * Number(num2)).toFixed(2)}`;
         num1 = '';
         num2 = '';
